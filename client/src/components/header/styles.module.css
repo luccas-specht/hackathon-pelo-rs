@@ -115,3 +115,18 @@
     color: #e0e0e0;
   }
 }
+
+.about-it {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 300;
+  padding: 15px;
+  width: 220px;
+  margin-top: 10px;
+  border: 2px solid #f2f2f2;
+  background: #e0e0e0;
+}

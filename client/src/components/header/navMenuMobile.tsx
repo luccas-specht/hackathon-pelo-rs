@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction } from 'react';
 import Link from 'next/link';
 import styles from './styles.module.css';
 import { navs } from './nav';
 
 import Image from 'next/image';
 import logo from '../../../public/logo-rs.png';
+import logoRefugioLegal from '../../../public/logo-refugio-legal.svg';
 
 type Props = {
   handleClose: (value: boolean) => void;
@@ -24,6 +24,8 @@ export const NavMenuMobile = ({ handleClose }: Props) => {
         {borderTop(backgroundColors[0])}
       </div>
 
+      <Image src={logoRefugioLegal} alt="Refugio legal logo" />
+
       <section className={styles['nav-mobile-wrapper-section-links']}>
         {navs.map((element, index) => (
           <Link
@@ -36,6 +38,11 @@ export const NavMenuMobile = ({ handleClose }: Props) => {
           </Link>
         ))}
       </section>
+
+      <span className={styles['about-it']}>
+        Promovendo a conexão entre advogados voluntários e afetados pela
+        enchente.
+      </span>
 
       <Image src={logo} alt="Rio grande do sul logo" />
     </header>

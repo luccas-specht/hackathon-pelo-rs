@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { NavMenuMobile } from './navMenuMobile';
 
 export const Header = () => {
-  const [isNavMenuMobileOpen, setIsNavMenuMobileOpen] = useState(true);
+  const [isNavMenuMobileOpen, setIsNavMenuMobileOpen] = useState(false);
 
   const borderTop = (color: string) => (
     <div style={{ backgroundColor: color }} className={styles['border-top']} />
