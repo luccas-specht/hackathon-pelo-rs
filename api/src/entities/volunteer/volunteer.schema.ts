@@ -1,8 +1,8 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from 'mongoose';
 
-import { DBCollection } from "../../enums";
+import { DBCollection } from '../../enums';
 
-import type { VolunteerDocument } from "./volunteer.document";
+import type { VolunteerDocument } from './volunteer.document';
 
 const benefitSchema = new Schema(
     {
@@ -26,12 +26,12 @@ const benefitSchema = new Schema(
             type: String,
             required: true,
         },
-        phone: {
+        phoneNumber: {
             type: String,
             required: true,
         },
     },
     { autoIndex: true, timestamps: true, __v: false }
-)
+);
 
 export default model<VolunteerDocument>(DBCollection.VOLUNTEER, benefitSchema);
