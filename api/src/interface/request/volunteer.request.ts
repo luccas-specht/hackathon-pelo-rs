@@ -1,4 +1,4 @@
-export interface Volunteer {
+export interface RegisterVolunteerRequest {
     name: string;
     surname: string;
     email: string;
