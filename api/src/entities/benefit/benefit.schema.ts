@@ -1,8 +1,8 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from 'mongoose';
 
-import { DBCollection } from "../../enums";
+import { DBCollection } from '../../enums';
 
-import type { BenefitDocument } from "./benefit.document";
+import type { BenefitDocument } from './benefit.document';
 
 const benefitSchema = new Schema(
     {
@@ -24,6 +24,6 @@ const benefitSchema = new Schema(
         },
     },
     { autoIndex: true, timestamps: false, __v: false }
-)
+);
 
 export default model<BenefitDocument>(DBCollection.BENEFIT, benefitSchema);

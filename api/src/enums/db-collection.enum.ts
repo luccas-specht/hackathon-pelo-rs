@@ -1,4 +1,5 @@
 export enum DBCollection {
     BENEFIT = 'benefits',
-    VOLUNTEER = 'volunteers'
+    VOLUNTEER = 'volunteers',
+    SESSION_TOKEN = 'sessiontokens',
 }

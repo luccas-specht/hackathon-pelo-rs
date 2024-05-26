@@ -1,9 +1,11 @@
-import type { RouterConfig } from "../interface/router-config";
+import type { RouterConfig } from '../interface/router-config';
 
-import { benefitController } from "./benefit.controller";
+import { benefitController } from './benefit.controller';
+import { volunteerController } from './volunteer.controller';
 
 const controllers: RouterConfig[] = [
-    { path: '/benefits', module: benefitController}
-]
+    { path: '/benefit', module: benefitController },
+    { path: '/volunteer', module: volunteerController },
+];
 
 export default controllers;
