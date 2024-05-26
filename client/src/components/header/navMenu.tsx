@@ -20,10 +20,12 @@ export const NavMenu = ({ handleOpen }: Props) => (
         voltar
       </button>
     </span>
-    {navs.map((element) => (
-      <Link key={element.link} href={`${element.link}`}>
-        {element.title}
-      </Link>
-    ))}
+    <div>
+      {navs.map((element) => (
+        <Link key={element.link} href={`${element.link}`}>
+          {element.title}
+        </Link>
+      ))}
+    </div>
   </div>
 );

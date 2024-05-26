@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+
+.container img {
+  margin-top: 40px;
+}
+
+.container span {
+  font-family: 'Raleway';
+  color: #666360;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.48px;
+  text-align: center;
+}
+
+.container main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container main > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.container main > form > div {
+  display: flex;
+  border: 2px solid red;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+.container main > form > div > img {
+  margin-top: 17px;
+  margin-left: 20px;
+}
+
+.container main > form > div > input {
+  width: 100%;
+  max-width: 300px;
+  gap: 20px;
+
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  text-align: flex;
+  padding-left: 10px;
+
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+}
+
+.container main > form > div > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.container main > form > div > input::placeholder {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+}
+
+.container main > section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 20px;
+}
+
+.container main > section > button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #c5374f;
+  background-color: #c5374f;
+  color: #fff;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: center;
+}
+
+.container main > section > button:last-child {
+  background-color: white;
+  color: #c5374f;
+}

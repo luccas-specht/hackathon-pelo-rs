@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation';
+
 const direitos = [
   {
     title: 'Saque Calamidade do FGTS',
@@ -73,6 +75,8 @@ const direitos = [
   },
 ];
 
+import BenefitsPage from './benefits/page';
+
 export default function Home() {
-  return <h1>opa</h1>;
+  redirect('/benefits');
 }
