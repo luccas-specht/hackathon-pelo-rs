@@ -4,8 +4,15 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
+import mongoose from 'mongoose';
 
-const app = express();
+import { MONGODB_URI } from './secret/db';
+import mapRoutes from './helper/routes';
+import controllers from './controller';
+
+const SERVER_PORT = 8080;
+
+let app = express();
 
 app.use(cors({
     credentials: true,
@@ -14,10 +21,15 @@ app.use(cors({
 app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
+app = mapRoutes(app, controllers);
 
 const server = http.createServer(app);
 
-server.listen(8080, () => {
+server.listen(SERVER_PORT, () => {
     console.log('Server running on http://localhost:8080/');
-    console.log(process.env.MONGODB_URI);
 })
+
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
+mongoose.connection.on('error', (error: Error) => console.log(error));
+mongoose.connection.once('open', () => console.log('MongoDB connection established'));
