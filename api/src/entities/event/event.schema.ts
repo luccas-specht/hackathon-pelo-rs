@@ -17,10 +17,6 @@ const eventSchema = new Schema(
             required: true,
             enum: OccupationArea,
         },
-        link: {
-            type: String,
-            required: true,
-        },
     },
     { autoIndex: true, timestamps: false, __v: false }
 );
