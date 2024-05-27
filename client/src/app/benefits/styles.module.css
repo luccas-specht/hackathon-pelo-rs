@@ -8,15 +8,16 @@
 
 .details {
   width: 100%;
-  max-height: max-content;
   font-family: 'Raleway';
   font-size: 30px;
   font-weight: 800;
   line-height: 34px;
+  padding: var(--spacing-padding);
+  padding-top: 30px;
   padding-bottom: 40px;
   background-color: #f2f2f2;
   max-width: var(--max-width);
-  padding: var(--spacing-padding);
+
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -28,4 +29,31 @@
 
 .details > strong {
   color: #c5374f;
+  font-weight: 800;
+}
+
+.wrapper-button {
+  margin-top: -35px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--spacing-padding);
+}
+
+.wrapper-button button {
+  width: 100%;
+  max-width: 223px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #8ca13a;
+  background-color: #8ca13a;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: center;
+  color: white;
 }

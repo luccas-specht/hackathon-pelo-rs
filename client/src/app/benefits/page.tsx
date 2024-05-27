@@ -1,9 +1,17 @@
-'use client';
-
 import { Header } from '@/components/header';
 import styles from './styles.module.css';
+import { getAllBenefits } from '@/server/getAllBenefits';
 
-export default function Benefits() {
+async function getData() {
+  return getAllBenefits();
+}
+
+export default async function Benefits() {
+  const benefits = await getData();
+  console.log({ benefits });
+
+  /*
+
   const callApi = async () => {
     try {
       const response = await fetch(
@@ -16,11 +24,21 @@ export default function Benefits() {
     }
   };
 
+
+
+*/
+
   return (
     <>
       <Header />
       <div className={styles['container']}>
-        <button onClick={callApi}>clica</button>
+        <section className={styles['details']}>
+          <span>Afetados da enchente no Rio Grande do Sul:</span>
+          <strong>Benefícios e direitos</strong>
+        </section>
+        <div className={styles['wrapper-button']}>
+          <button>Saber meus benefícios</button>
+        </div>
       </div>
     </>
   );
