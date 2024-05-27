@@ -7,7 +7,7 @@ export default function Benefits() {
   const callApi = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/oab/check/luccas/123312'
+        'http://localhost:8080/oab/check/VALMIR asasas DA SILVA/103028'
       );
       const data = await response.json();
       console.log({ data });
@@ -15,11 +15,13 @@ export default function Benefits() {
       console.log(error);
     }
   };
-  callApi();
+
   return (
     <>
       <Header />
-      <div className={styles['container']}></div>
+      <div className={styles['container']}>
+        <button onClick={callApi}>clica</button>
+      </div>
     </>
   );
 }
