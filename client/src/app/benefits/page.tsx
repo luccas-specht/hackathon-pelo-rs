@@ -7,10 +7,10 @@ export default function Benefits() {
   const callApi = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/oab/check/VALMIR asasas DA SILVA/103028'
+        'http://localhost:8080/oab/check/VALMIR RODRIGUES DA SILVA/103028'
       );
       const data = await response.json();
-      console.log({ data });
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

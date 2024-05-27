@@ -1,1 +1,1 @@
-export { checkIfOABExists } from './check-oab';
+export { checkIfOABExists } from './check-if-oab-exists';
