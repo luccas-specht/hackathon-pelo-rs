@@ -1,20 +1,18 @@
-'use client';
-
 import Image from 'next/image';
-import Link from 'next/link';
 import logo from '../../../public/logo-refugio-legal.svg';
 import emailIcon from '../../../public/email.svg';
 import senhaIcon from '../../../public/senha.svg';
+
 import { HeaderNoLogo } from '@/components/header/headerNoLogo';
 import styles from './styles.module.css';
 
-export default function Login() {
+export default function ShelterSignUp() {
   return (
     <>
       <HeaderNoLogo />
       <div className={styles['container']}>
         <Image src={logo} alt="Logo Refugio Legal" />
-        <span>Criar conta</span>
+        <span>Login</span>
         <main>
           <form>
             <div>
@@ -28,7 +26,7 @@ export default function Login() {
           </form>
           <section>
             <button>Fazer Login</button>
-            <Link href={'/sign-up/volunteer'}>Criar conta</Link>
+            <button>Criar Conta</button>
           </section>
         </main>
       </div>
