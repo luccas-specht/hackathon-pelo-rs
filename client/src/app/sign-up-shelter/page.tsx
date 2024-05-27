@@ -6,7 +6,7 @@ import senhaIcon from '../../../public/senha.svg';
 import { HeaderNoLogo } from '@/components/header/headerNoLogo';
 import styles from './styles.module.css';
 
-export default function ShelterSignUp() {
+export default function signUpShelter() {
   return (
     <>
       <HeaderNoLogo />

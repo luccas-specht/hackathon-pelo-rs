@@ -8,7 +8,7 @@ import senhaIcon from '../../../public/senha.svg';
 import { HeaderNoLogo } from '@/components/header/headerNoLogo';
 import styles from './styles.module.css';
 
-export default function Login() {
+export default function LoginShelter() {
   return (
     <>
       <HeaderNoLogo />
@@ -28,7 +28,7 @@ export default function Login() {
           </form>
           <section>
             <button>Fazer Login</button>
-            <Link href={'/sign-up/volunteer'}>Criar conta</Link>
+            <Link href={'/sign-up-shelter'}>Criar conta</Link>
           </section>
         </main>
       </div>

@@ -1,11 +1,11 @@
 export const navs = [
   {
     title: 'Sou abrigo',
-    link: '/login',
+    link: '/login-shelter',
   },
   {
     title: 'Sou voluntário',
-    link: '/login',
+    link: '/login-volunteer',
   },
   {
     title: 'Fui afetado pelas enchentes',
