@@ -2,6 +2,7 @@ import * as Joi from 'joi';
 
 import { Volunteer } from '../entities/volunteer';
 import { getRequiredField } from '../helper/validators';
+import { OccupationArea } from '../enums';
 
 export const registerVolunteerSchema = Joi.object<Volunteer>({
     name: Joi.string()
@@ -31,7 +32,9 @@ export const registerVolunteerSchema = Joi.object<Volunteer>({
         .trim()
         .required()
         .messages({ ...getRequiredField('OAB') }),
-    phoneNumber: Joi.string().trim().messages({
-        'string.empty': `Número de telefone é obrigatório`,
-    }),
+    occupationArea: Joi.string()
+        .valid(...Object.values(OccupationArea))
+        .messages({
+            'any.only': 'Área de atuação fornecida não é válida',
+        }),
 });
