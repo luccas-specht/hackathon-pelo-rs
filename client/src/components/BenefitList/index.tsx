@@ -35,7 +35,7 @@ export const BenefitList = ({
   title = 'Todos os benefícios',
 }: Props) => {
   const renderBenefits = () =>
-    benefits.map((benefit) => (
+    benefits?.map((benefit) => (
       <article key={benefit._id}>
         <span>
           Atualização: {new Date(benefit.updatedAt).toLocaleDateString('pt-BR')}
