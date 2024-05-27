@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 import { navs } from './nav';
-import arrow from '../../../public/Left-arrow.svg';
+import arrow from '../../../public/left-arrow.svg';
 
 type Props = {
   handleOpen: (value: boolean) => void;

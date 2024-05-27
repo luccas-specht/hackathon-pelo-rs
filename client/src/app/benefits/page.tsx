@@ -1,6 +1,7 @@
 import { Header } from '@/components/header';
 import styles from './styles.module.css';
 import { getAllBenefits } from '@/server/getAllBenefits';
+import { BenefitList } from '@/components/BenefitList';
 
 async function getData() {
   return getAllBenefits();
@@ -8,7 +9,6 @@ async function getData() {
 
 export default async function Benefits() {
   const benefits = await getData();
-  console.log({ benefits });
 
   /*
 
@@ -39,6 +39,9 @@ export default async function Benefits() {
         <div className={styles['wrapper-button']}>
           <button>Saber meus benefícios</button>
         </div>
+        <section className={styles['benefits']}>
+          <BenefitList benefits={benefits} />
+        </section>
       </div>
     </>
   );

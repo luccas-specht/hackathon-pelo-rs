@@ -57,3 +57,12 @@
   text-align: center;
   color: white;
 }
+
+.benefits {
+  width: 100%;
+  padding: var(--spacing-padding);
+  max-width: var(--max-width);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
