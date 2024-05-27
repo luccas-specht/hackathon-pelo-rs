@@ -110,7 +110,18 @@
   text-align: center;
 }
 
-.container main > section > button:last-child {
+.container main > section > a {
   background-color: white;
   color: #c5374f;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #c5374f;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: center;
 }
