@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { DBCollection } from '../../enums';
+import { DBCollection, OccupationArea } from '../../enums';
 
 import type { VolunteerDocument } from './volunteer.document';
 
@@ -26,9 +26,10 @@ const benefitSchema = new Schema(
             type: String,
             required: true,
         },
-        phoneNumber: {
+        occupationArea: {
             type: String,
             required: true,
+            enum: OccupationArea,
         },
     },
     { autoIndex: true, timestamps: true, __v: false }
